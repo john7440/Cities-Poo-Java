@@ -13,5 +13,12 @@ public class City {
 		this.cityName = cityName;
 		this.numberOfCitizen = numberOfCitizen;
 	}
+	
+	//méthode
+	public void display() {
+		System.out.println(this.cityName + " est une ville de " + 
+							this.numberOfCitizen + " située en " 
+							+ this.country );
+	}
 
 }
