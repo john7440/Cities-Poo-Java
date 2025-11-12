@@ -6,15 +6,21 @@ public class City {
 	private String country;
 	private String cityName;
 	private int numberOfCitizen;
+	//ajout d'un id
+	private int id;
+	private static int nextId = 1;
+	
 	
 	//COnstructeurs
 	public City(String country, String cityName, int numberOfCitizen) {
+		this.id = nextId++;
 		this.country = country;
 		this.cityName = cityName;
 		this.numberOfCitizen = numberOfCitizen;
 	}
 	
 	public City(String cityName, int numberOfCitizen) {
+		this.id = nextId++;
 		this.country = "Unknown";
 		setCityName(cityName);
 		setNumberOfCitizen(numberOfCitizen);
@@ -22,6 +28,11 @@ public class City {
 	
 	
 	// accessseurs
+	
+	//ID
+	public int getId() {
+        return id;
+    }
 	
 	//Country
 	public String getCountry() {
