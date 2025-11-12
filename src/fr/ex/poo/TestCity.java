@@ -18,7 +18,7 @@ public class TestCity {
 		//test changements 
 		Toulouse.setNumberOfCitizen(370000);
 		
-		Toulouse.display();
+		System.out.println(Toulouse);
 		
 		
 
