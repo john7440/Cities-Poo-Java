@@ -14,11 +14,47 @@ public class City {
 		this.numberOfCitizen = numberOfCitizen;
 	}
 	
+	// accessseurs
+	
+	//Country
+	public String getCountry() {
+		return country;
+	}
+	
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	
+	//City
+	public String getCityName() {
+		return cityName;
+	}
+	
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+	
+	//Nb of citizen
+	public int getNumberOfCitizen() {
+		return numberOfCitizen;
+	}
+	
+	public void setNumberOfCitizen(int numberOfCitizen) {
+		if (numberOfCitizen < 0) {
+			System.out.println("Il ne peut pas y avoir - de 0 habitants ! Valeurs par défaut mise à 0");
+			this.numberOfCitizen = 0;
+		} else {
+			this.numberOfCitizen = numberOfCitizen;
+		}
+		
+	}
+	
+	
 	//méthode
 	public void display() {
-		System.out.println(this.cityName + " est une ville de " + 
-							this.numberOfCitizen + " située en " 
-							+ this.country );
+		System.out.println(getCityName()+ " est une ville de " + 
+						   getNumberOfCitizen() + " située en " + 
+						   getCountry() );
 	}
 
 }
