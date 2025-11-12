@@ -2,9 +2,16 @@ package fr.ex.poo;
 
 public class City {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	//attributs
+	private String country;
+	private String cityName;
+	private int numberOfCitizen;
+	
+	//COnstructeur
+	public City(String country, String cityName, int numberOfCitizen) {
+		this.country = country;
+		this.cityName = cityName;
+		this.numberOfCitizen = numberOfCitizen;
 	}
 
 }
