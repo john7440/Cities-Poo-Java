@@ -63,5 +63,13 @@ public class City {
 						   getNumberOfCitizen() + " située en " + 
 						   getCountry() );
 	}
+	
+	// la méthode toString pour affichage avec print
+	public String toString() {
+		return getCityName() + " est une ville de " +
+			   getNumberOfCitizen() + " située en " +
+			   getCountry();
+				
+	}
 
 }
