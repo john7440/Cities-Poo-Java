@@ -7,12 +7,19 @@ public class City {
 	private String cityName;
 	private int numberOfCitizen;
 	
-	//COnstructeur
+	//COnstructeurs
 	public City(String country, String cityName, int numberOfCitizen) {
 		this.country = country;
 		this.cityName = cityName;
 		this.numberOfCitizen = numberOfCitizen;
 	}
+	
+	public City(String cityName, int numberOfCitizen) {
+		this.country = "Unknown";
+		setCityName(cityName);
+		setNumberOfCitizen(numberOfCitizen);
+	}
+	
 	
 	// accessseurs
 	
@@ -50,7 +57,7 @@ public class City {
 	}
 	
 	
-	//méthode
+	//méthodes
 	public void display() {
 		System.out.println(getCityName()+ " est une ville de " + 
 						   getNumberOfCitizen() + " située en " + 
