@@ -1,0 +1,10 @@
+package fr.ex.poo;
+
+public class City {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
